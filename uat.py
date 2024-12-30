@@ -3,7 +3,7 @@ from math import exp
 print('Universal Apparent Temperature')
 print('Formula by AleX-1337\n')
 
-T = min(max(int(float(input('Enter air temperature (°C): '))), -150), 75) #Cap air temperature between -150°C and 70°C
+T = min(max(int(float(input('Enter air temperature (°C): '))), -150), 80) #Cap air temperature between -150°C and 80°C
 H = min(max(int(float(input('Enter relative humidity (0% - 100%): '))), 0), 100) #Cap relative humidity between 0% and 100%
 W = min(max(int(float(input('Enter wind speed (km/h): '))), 0), 250) #Cap wind speed between 0 km/h and 250 km/h
 
