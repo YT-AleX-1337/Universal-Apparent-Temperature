@@ -8,7 +8,7 @@ H = min(max(int(float(input('Enter relative humidity (0% - 100%): '))), 0), 100)
 W = min(max(int(float(input('Enter wind speed (km/h): '))), 0), 250) #Cap wind speed between 0 km/h and 250 km/h
 
 H_A = 0.061 * H * exp(17.27 * T / (237.7 + T)) #Calculate water vapor pressure (absolute humidity)
-h = 1 - 2 / (1 + exp(0.2 * T - 2)) #Calculate humidity factor: it should increase apparent temperature when it's hot but slightly decrease it when it's cold
+h = 1 - 4 / (1 + exp(0.3 * T - 2)) #Calculate humidity factor: it should increase apparent temperature when it's hot but slightly decrease it when it's cold
 T_WC = 13.12 - 0.379 * T - (11.37 - 0.397 * T) * (W + 1.4) ** 0.16 #Calculate wind effect (it lowers the apparent temperature when it's cold and slightly increase it when it's hot)
 w = 1.2 / (1 + exp(0.1 * T + (W + 1.4) ** 0.16 - 4)) - 1 / (1 + exp(0.017 * T + 3)) - 0.2 #Calculate wind factor: the higher the temperature, the least effect wind has
 
