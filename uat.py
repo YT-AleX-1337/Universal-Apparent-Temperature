@@ -2,6 +2,7 @@ from math import exp
 
 print('Universal Apparent Temperature')
 print('Formula by AleX-1337\n')
+print('Combines the Wind Chill formula with the heat factor of the Australian Apparent temperature\n\n')
 
 T = min(max(int(float(input('Enter air temperature (°C): '))), -150), 80)           #Cap air temperature between -150°C and 80°C
 H = min(max(int(float(input('Enter relative humidity (0% - 100%): '))), 0), 100)    #Cap relative humidity between 0% and 100%
