@@ -1,7 +1,7 @@
 from math import exp
 
 print('Universal Apparent Temperature')
-print('Combines the Wind Chill formula with the heat factor of the Australian Apparent temperature')
+print('Combines the Wind Chill formula with the heat factor of the Australian Apparent Temperature')
 print('Formula by AleX-1337\n')
 
 T = min(max(int(float(input('Enter air temperature (°C): '))), -150), 80)           #Cap air temperature between -150°C and 80°C
