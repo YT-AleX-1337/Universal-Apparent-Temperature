@@ -1,3 +1,5 @@
+#OLD VERSION!
+
 from math import exp
 
 print('Universal Apparent Temperature')
